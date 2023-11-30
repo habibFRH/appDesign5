@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <!-- AppBar -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3196F3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explicite app"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Content Container -->
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="498dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <!-- Vertical Linear Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/ed1"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:hint="text"
+                    ></EditText>
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ENVOYER TEXT"
+                    android:layout_gravity="center"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="140dp"
+                    tools:layout_editor_absoluteY="159dp"></Button>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ed2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="location"
+                ></EditText>
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GOOGLE MAPS"
+                tools:ignore="MissingConstraints"
+                android:layout_gravity="center"
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="259dp"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ed3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="number"
+                android:inputType="number"
+                ></EditText>
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="APPELER NUM"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="359dp"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/ed4"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Contact"
+                ></EditText>
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CONTACTS"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="140dp"
+                tools:layout_editor_absoluteY="459dp"></Button>
+        </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
